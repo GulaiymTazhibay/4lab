@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Finding the largest number.</p>
+<p id="demo"></p>
+
+<script>
+function findMin() {
+    var i;
+    var min = Infinity;
+    for(i = 0; i < arguments.length; i++) {
+        if (arguments[i] <= min) {
+            min = arguments[i];
+        }
+    }
+    return min;
+} 
+document.getElementById("demo").innerHTML = findMin(13, 5, 6,-5);
+</script>
+
+</body>
+</html>
+

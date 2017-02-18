@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+
+function fib() {
+  var temp, num1 = 0, num2 = 6;
+  while (1) {
+    var reset = yield num1;
+    if(reset) {
+      num1 = 1;
+      num2 = 6;
+    }
+    temp = num1;
+    num1 = num2;
+    num2 += temp;
+  }
+}
+ </script>
+var genFib = fib();
+
+alert(genFib.next()); 
+
+
+
+</body>
+</html>
+
