@@ -1,23 +1,15 @@
 <html>
-<script >
-function countOccurences(input) {
-    var dict = {};
-    for (var i = 0; i < input.length; i++) {
-    	var letter = input.charAt(i);
-    	if (dict[letter]) {
-    		dict[letter]++;
-    	}
-    	else {
-    		dict[letter] = 1;
-    	}
-   	}
-   	return dict;
+ <script>
+var a=prompt("a san engiz"," ");
+var b= prompt("b ga san engiz?", " ");
+var c= prompt("c ga san engiz"," ");
+function election(a,b,c){
+var s=a+b+c;
+if(s>=2){ return 1;}
+else{ return 0;}
 }
-var s = countOccurences("Aikaagk");
-var output = '';
-for (var property in s) {
-	output += property + '=' + s[property] + "<br\>";
-}
-alert(output);
+result = election(a,b,c);
+alert(result);
 </script>
+
 </html>
