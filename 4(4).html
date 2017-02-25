@@ -1,0 +1,12 @@
+<html>
+<script>
+var s = prompt("String :"," ");
+function getF(s) {
+  return s.split('').reduce( (p, c) => {
+    p[c] = p[c] ? p[c] + 1 : 1;
+    return p;
+  }, {});
+};
+alert(getF(s));
+</script>
+</html>
